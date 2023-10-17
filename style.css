@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --background:  #fcc868d8;
+    --button_text: #0f0f0f;
+    --button: #ffeab4;
+    --border: #6e6e6e;
+    --top: #ffd796;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman';
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.converter {
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 20px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: var(--button);
+    transition-duration: 0.4s;
+    font-family: 'Nunito', Georgia, 'Times New Roman';
+    font-size: 1.125em;
+    font-weight: bold;
+    color: var(--button_text);
+    border-radius: 8px;
+    width: auto;
+    border: 2px solid var(--border);
+}
+
+#my_input_id {
+    text-align: center;
+}
+
+#display_value_id {
+    font-size: 30px;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.made_by {
+    margin-left: 10px;
+}

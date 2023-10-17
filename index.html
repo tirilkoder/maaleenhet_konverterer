@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhet konverter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        
+        <div>
+        <form>
+            <label for="converter" class="converter">Målenhet konverter</label>
+            <input type="number" name="converter" id="my_input_id"> 
+            
+        <label for="from_unit" class="from">Fra</label>
+        <select name="from_unit" id="from_unit_id">
+            <option value="cm">CM</option>
+            <option value="m">M</option>
+            <option value="km">KM</option>
+        </select>
+
+        <label for="to_unit">Til</label>
+        <select name="to_unit" id="to_unit_id">
+            <option value="cm">CM</option>
+            <option value="m">M</option>
+            <option value="km">KM</option>
+        </select>
+        </form>
+
+    <div class="button">
+        <button onclick="unitConverter()" class="btn">Konventer</button>
+        <p id="display_value_id"></p>
+    </div>
+</div>
+    </main>
+
+    <footer class="footer">
+        <p class="made_by">Laga av Tiril</p>
+    </footer>
+</body>
+</html>
