@@ -1,48 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
 
 :root {
-    --background:  #fcc868d8;
+    --background:  #d8e2dc;
+    --header: #ffffff96;
+    --box: #ffd796; 
     --button_text: #0f0f0f;
-    --button: #ffeab4;
-    --border: #6e6e6e;
+    --button: #f1ffc4;
+    --border: #222222;
     --top: #ffd796;
+    --line: #ffbb7b;
+    --hover: #fff37b;
+    --footer: #8080801e;
+    --shadow_1: #0000003d;
+    --shadow_2: #00000030;
 }
 
 body {
-    background-color: var(--background);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman';
+    font-family: 'Quicksand', sans-serif;
 }
 
+header {
+    border-bottom: solid 0.0625em var(--line) ;
+    display: flex;
+    justify-content: center;
+    background-color: var(--header)
+}
 
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.3125em;
 }
-form {
+
+.box {
+    background-color: var(--box);
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 var(--shadow_1), 0 17px 50px 0 var(--shadow_2);
+    width: 300px;
+    height: 500px;
+}
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 20px;
+    gap: 0.3125em;   
+}
+
+#my_input_id {
+    text-align: center;
+    width: 150px;
+}
+
+#from_unit_id, #to_unit_id, #my_input_id {
+    padding: 0.3125em;
+    border-radius: 0.3125em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.from ,.to {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .converter {
-    font-size: 1.125em;
+    font-size: 1.5625em;
     font-weight: bold;
-    padding: 20px;
+    padding: 1.25em;
 }
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .btn {
@@ -51,7 +99,7 @@ form {
     background-color: var(--button);
     transition-duration: 0.4s;
     font-family: 'Nunito', Georgia, 'Times New Roman';
-    font-size: 1.125em;
+    font-size: 1.25em;
     font-weight: bold;
     color: var(--button_text);
     border-radius: 8px;
@@ -59,20 +107,22 @@ form {
     border: 2px solid var(--border);
 }
 
-#my_input_id {
-    text-align: center;
+.btn:hover {
+    background-color: var(--hover);
+    color: var(--text);
+    border: 2px solid var(--border);
+    border-radius: 8px;
 }
 
 #display_value_id {
     font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
 }
 
 .footer {
     display: flex;
-    background-color: var(--primary);
+    background-color: var(--footer);
     color: var(--text);
-}
-
-.made_by {
-    margin-left: 10px;
+    padding: 10px;
 }

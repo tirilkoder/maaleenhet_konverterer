@@ -9,38 +9,47 @@
 </head>
 <body>
     <header>
+       <h2>Lengdeenheter</h2> 
     </header>
-    <main>
-        
-        <div>
-        <form>
-            <label for="converter" class="converter">Målenhet konverter</label>
-            <input type="number" name="converter" id="my_input_id"> 
-            
-        <label for="from_unit" class="from">Fra</label>
-        <select name="from_unit" id="from_unit_id">
-            <option value="cm">CM</option>
-            <option value="m">M</option>
-            <option value="km">KM</option>
-        </select>
-
-        <label for="to_unit">Til</label>
-        <select name="to_unit" id="to_unit_id">
-            <option value="cm">CM</option>
-            <option value="m">M</option>
-            <option value="km">KM</option>
-        </select>
-        </form>
-
-    <div class="button">
-        <button onclick="unitConverter()" class="btn">Konventer</button>
-        <p id="display_value_id"></p>
-    </div>
-</div>
+    <main> 
+        <section>
+            <div class="box"> 
+                <form>
+                    <!-- Inntastingsfelt-->
+                    <div class="form">
+                        <label for="converter" class="converter">Lengde konverter</label>
+                        <input type="number" name="converter" id="my_input_id"> 
+                    </div>
+                    <!-- Velge enhet fra-->
+                    <div class="from">
+                        <label for="from_unit" class="from">Fra</label>
+                        <select name="from_unit" id="from_unit_id">
+                            <option value="cm">CM</option>
+                            <option value="m">M</option>
+                            <option value="km">KM</option>
+                        </select>
+                    <!-- Velge enhet til-->
+                    </div>
+                    <div class="to">
+                        <label for="to_unit" class="to">Til</label>
+                        <select name="to_unit" id="to_unit_id">
+                            <option value="cm">CM</option>
+                            <option value="m">M</option>
+                            <option value="km">KM</option>
+                        </select>
+                    </div>
+                </form>
+                <!-- Knapp som konverterer-->
+                <div class="button">
+                    <button onclick="unitConverter()" class="btn">Konverter</button>
+                    <p id="display_value_id"></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <p class="made_by">Laga av Tiril</p>
+        <p>Laga av Tiril</p>
     </footer>
 </body>
 </html>
