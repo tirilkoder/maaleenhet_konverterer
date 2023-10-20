@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
 
 :root {
-    --background:  #d8e2dc;
+    --background: #fcc73c;
     --header: #ffffff96;
     --box: #ffd796; 
     --button_text: #0f0f0f;
-    --button: #f1ffc4;
+    --button: #fff37b; 
     --border: #222222;
-    --top: #ffd796;
     --line: #ffbb7b;
-    --hover: #fff37b;
+    --hover: #ffd76a;
     --footer: #8080801e;
     --shadow_1: #0000003d;
     --shadow_2: #00000030;
@@ -34,7 +33,7 @@ header {
     background-color: var(--header)
 }
 
-main {
+section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,7 +46,7 @@ main {
     background-color: var(--box);
     border-radius: 8px;
     box-shadow: 0 12px 16px 0 var(--shadow_1), 0 17px 50px 0 var(--shadow_2);
-    width: 300px;
+    width: 400px;
     height: 500px;
 }
 
@@ -58,9 +57,19 @@ main {
     gap: 0.3125em;   
 }
 
+select {
+    cursor: pointer;
+}
+
+.converter {
+    font-size: 1.5625em;
+    font-weight: bold;
+    padding: 1.25em;
+}
+
 #my_input_id {
     text-align: center;
-    width: 150px;
+    width: 200px;
 }
 
 #from_unit_id, #to_unit_id, #my_input_id {
@@ -80,11 +89,6 @@ main {
     align-items: center;
 }
 
-.converter {
-    font-size: 1.5625em;
-    font-weight: bold;
-    padding: 1.25em;
-}
 .button {
     display: flex;
     align-items: center;
@@ -115,7 +119,7 @@ main {
 }
 
 #display_value_id {
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: bold;
     margin: 10px;
 }
@@ -125,4 +129,12 @@ main {
     background-color: var(--footer);
     color: var(--text);
     padding: 10px;
+}
+
+/* Responsive opp til mobil */
+@media (max-width: 425px) {
+   
+    .box {
+        width: 300px;
+    }
 }
