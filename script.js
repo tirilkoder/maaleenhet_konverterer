@@ -1,5 +1,5 @@
     // henter element fra HTML dokumentet inne i funksjonen
-    // En funksjon som er satt opp til å bli aktivert via ein onclick på Konvert-knappen i HTML
+    // En funksjon som er satt opp til å bli aktivert via ein onclick på konverter-knappen i HTML
 
 function unitConverter() {
     const myInput = document.querySelector("#my_input_id").value;
@@ -43,7 +43,23 @@ function unitConverter() {
     else {
     }
 
+    //Viser pop-up vindu på nettsiden viss du velger samme målenhet på fra og til
+
+    if (fromValue === "cm" && toValue === "cm")
+    {
+        alert ("Du må velge forskjellig lengde enhet"); //du har valgt samme lengde enhet
+    }
+    
+    if (fromValue === "m" && toValue === "m")
+    {
+        alert ("Du må velge forskjellig lengde enhet");
+    }
+
+    if (fromValue === "km" && toValue === "km")
+    {
+        alert ("Du må velge forskjellig lengde enhet");
+    }
+
     // Resultat fra if / else utrykket som vises på nettsiden.
     displayValue.textContent = result.toFixed(3);
 }
-
